@@ -52,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 totalPrice = (int) Math.ceil( mileRate * 3.25 + 3 );
+                //you need to put the editor in the button
                 editor.putString("MileString", totalMiles.toString());
+                editor.putString("CarString", selectedCarText);
                 editor.apply();
 //                 finalPrice = (totalPrice.toString());
                 Intent intent = new Intent (MainActivity.this, SecondActivity.class);

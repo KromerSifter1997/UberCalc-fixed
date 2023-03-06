@@ -46,14 +46,16 @@
 
     <Spinner
         android:id="@+id/vehicleDrop"
-        android:layout_width="199dp"
-        android:layout_height="28dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="148dp"
         android:entries="@array/carSelect"
         app:layout_constraintBottom_toTopOf="@+id/btnClick"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mileNum" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
