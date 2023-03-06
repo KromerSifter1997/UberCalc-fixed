@@ -12,7 +12,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
     //put an override before a new function is made
-    int totalMiles = 0;
+    int totalMiles;
     int totalPrice;
     int mileRate;
     private Spinner selectedCar;
