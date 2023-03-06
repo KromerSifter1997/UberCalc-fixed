@@ -12,7 +12,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
     //put an override before a new function is made
-    int totalMiles;
+    Integer totalMiles;
     int totalPrice;
     int mileRate;
     private Spinner selectedCar;
@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //variable name variable value is a key value pair
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        //creates editor
+        SharedPreferences.Editor editor = sharedPreferences.edit();
 
         Button button = (Button) findViewById(R.id.btnClick);
 
@@ -47,20 +52,18 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 totalPrice = (int) Math.ceil( mileRate * 3.25 + 3 );
-
+                editor.putString("MileString", totalMiles.toString());
+                editor.apply();
 //                 finalPrice = (totalPrice.toString());
                 Intent intent = new Intent (MainActivity.this, SecondActivity.class);
                 startActivity(intent);
             }
         });
-        //variable name variable value is a key value pair
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        //creates editor
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+
 
         //applies edits to value
-        editor.putString("MileString", String.valueOf(totalPrice));
-        editor.apply();
+
+
     }
 
 
