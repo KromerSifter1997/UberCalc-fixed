@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UberCalc</string>
+    <string-array name="carSelect">
+        <item>Sedan</item>
+        <item>Smart Car</item>
+        <item>Minivan</item>
+    </string-array>
 </resources>

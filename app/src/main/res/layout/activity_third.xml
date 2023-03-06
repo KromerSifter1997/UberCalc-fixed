@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="259dp"
+        android:layout_height="236dp"
+        app:srcCompat="@drawable/man_driving_and_using_hands_free_bluetooth_device"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="130dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
