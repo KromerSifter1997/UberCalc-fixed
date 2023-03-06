@@ -16,7 +16,7 @@ public class SecondActivity extends AppCompatActivity {
 
         // applies the string
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        String myString = sharedPreferences.getString("myString", "");
+        String myString = sharedPreferences.getString("MileString", "");
         //if it works the toast will display it, if not it will be blank
         Toast.makeText(this, myString, Toast.LENGTH_LONG).show();
 

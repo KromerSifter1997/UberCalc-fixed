@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 totalPrice = (int) Math.ceil( mileRate * 3.25 + 3 );
 
-                 finalPrice = (totalPrice.toString());
+//                 finalPrice = (totalPrice.toString());
                 Intent intent = new Intent (MainActivity.this, SecondActivity.class);
                 startActivity(intent);
             }
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         //applies edits to value
-        editor.putString("myString", "pingas");
+        editor.putString("MileString", String.valueOf(totalPrice));
         editor.apply();
     }
 
