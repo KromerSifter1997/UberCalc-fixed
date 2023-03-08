@@ -10,25 +10,22 @@
         android:id="@+id/mileNum"
         android:layout_width="84dp"
         android:layout_height="57dp"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="102dp"
+        android:layout_marginEnd="116dp"
         android:ems="10"
         android:hint="miles"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="72dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
-        android:text="Distance"
-        app:layout_constraintEnd_toStartOf="@+id/mileNum"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/distanceLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,23 +36,31 @@
         android:layout_marginStart="151dp"
         android:layout_marginEnd="166dp"
         android:layout_marginBottom="342dp"
-        android:text="Total"
+        android:text="@string/totalBtnLabel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/vehicleDrop"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="97dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="148dp"
+        android:layout_width="136dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="169dp"
         android:entries="@array/carSelect"
-        app:layout_constraintBottom_toTopOf="@+id/btnClick"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="574dp"
+        android:text="@string/vehicleLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

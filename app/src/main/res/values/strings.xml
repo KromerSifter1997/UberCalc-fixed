@@ -5,4 +5,17 @@
         <item>Smart Car</item>
         <item>Minivan</item>
     </string-array>
+    <string name="distanceLabel">Distance :</string>
+    <string name="vehicleLabel">Choose your vehicle</string>
+    <string name="totalBtnLabel">Total</string>
+    <string name="reviewLabel">Review your Request</string>
+    <string name="vehicleReviewLabel">Vehicle:</string>
+    <string name="milesLabel">Mileage:</string>
+    <string name="totalLabel">Total:</string>
+    <string name="returnBtnLabel">Cancel Ride</string>
+    <string name="reviewBtnLabel">Confirm Ride</string>
+    <string name="endMessage1">Your Driver</string>
+    <string name="endMessage2">Norm Alman</string>
+    <string name="endMessage3">Will Be Arriving Soon</string>
+
 </resources>

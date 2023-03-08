@@ -13,7 +13,7 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity {
     //put an override before a new function is made
     Integer totalMiles;
-    int totalPrice;
+    Integer totalPrice;
     int mileRate;
     private Spinner selectedCar;
     private EditText mileTotaltext;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
+                // this is where the specific objects are declared and calculated
                 selectedCar = findViewById(R.id.vehicleDrop);
                 String selectedCarText = selectedCar.getSelectedItem().toString();
                 mileTotaltext = findViewById(R.id.mileNum);
@@ -52,9 +52,12 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 totalPrice = (int) Math.ceil( mileRate * 3.25 + 3 );
-                //you need to put the editor in the button
+
+                //applies edits to value
                 editor.putString("MileString", totalMiles.toString());
                 editor.putString("CarString", selectedCarText);
+                editor.putString("PriceString", totalPrice.toString());
+                //you need to put the editor in the button
                 editor.apply();
 //                 finalPrice = (totalPrice.toString());
                 Intent intent = new Intent (MainActivity.this, SecondActivity.class);
@@ -63,20 +66,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //applies edits to value
+
 
 
     }
 
 
-    class HandleTheClick implements View.OnClickListener{
-
-        @Override
-        public void onClick(View v) {
-
-            //Toast.maketext(MainActivity.this, "I am a toast message", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent (MainActivity.this, SecondActivity.class);
-            startActivity(intent);
-        }
-    }
 }

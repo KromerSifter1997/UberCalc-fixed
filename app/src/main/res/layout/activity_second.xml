@@ -7,22 +7,22 @@
     tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:id="@+id/btnReturn"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
         android:layout_marginBottom="172dp"
-        android:text="Go Back"
+        android:text="@string/returnBtnLabel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="173dp"
-        android:text="Request ride"
+        android:id="@+id/btnClickReview"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/reviewBtnLabel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -32,7 +32,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="12dp"
-        android:text="Selected vehicle"
+        android:text="@string/vehicleReviewLabel"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -42,7 +42,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="16dp"
-        android:text="Mileage"
+        android:text="@string/milesLabel"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -50,13 +50,14 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
+        android:layout_marginStart="156dp"
         android:layout_marginTop="48dp"
         android:layout_marginBottom="664dp"
-        android:text="total"
+        android:text="@string/reviewLabel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/vehicleResult"
@@ -85,7 +86,7 @@
         android:layout_marginStart="27dp"
         android:layout_marginBottom="223dp"
         android:text="N/a"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnClickReview"
         app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <TextView
@@ -94,7 +95,7 @@
         android:layout_height="34dp"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="224dp"
-        android:text="Total"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:text="@string/totalLabel"
+        app:layout_constraintBottom_toTopOf="@+id/btnReturn"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
