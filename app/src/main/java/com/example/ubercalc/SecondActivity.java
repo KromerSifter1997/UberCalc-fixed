@@ -24,8 +24,7 @@ public class SecondActivity extends AppCompatActivity {
         String myString = sharedPreferences.getString("MileString", "");
         String myRide = sharedPreferences.getString("CarString", "");
         String myPrice = sharedPreferences.getString("PriceString", "");
-        //if it works the toast will display it, if not it will be blank
-        Toast.makeText(this, myString, Toast.LENGTH_LONG).show();
+
 
         TextView mileView = (TextView) findViewById(R.id.mileResult);
         TextView carView = (TextView) findViewById(R.id.vehicleResult);
@@ -35,7 +34,7 @@ public class SecondActivity extends AppCompatActivity {
         priceView.setText(myPrice);
 
         button.setOnClickListener(new View.OnClickListener() {
-
+// return and confirm buttons move you to the first page and back
             @Override
             public void onClick(View v) {
 
